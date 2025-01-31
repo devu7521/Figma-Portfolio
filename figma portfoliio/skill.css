@@ -1,0 +1,483 @@
+
+
+.skills-section ,.button-container,.logo-container{
+background-color: #F0F0F6;
+}
+.skills-section {
+text-align: center;
+padding: 50px 20px;
+margin-top: 100px;
+}
+
+.skills-section h1 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+.skills-section .description {
+margin-bottom: 50px;
+color: #777;
+}
+
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.skills-card {
+background-color: white;
+padding: 20px;
+width: 300px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+text-align: left;
+}
+
+.skills-card h3 {
+margin-top: 0;
+margin-bottom: 20px;
+font-size: 18px;
+color: #333;
+}
+
+.skill {
+margin-bottom: 15px;
+}
+
+.skill span {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.progress-bar {
+background-color: #eee;
+border-radius: 4px;
+overflow: hidden;
+height: 8px;
+}
+
+.progress-bar div {
+height: 100%;
+background-color: #FFD700;
+}
+.button-container {
+text-align: center;
+padding-bottom: 50px;
+}
+
+.add-skill {
+background-color: #f9a825;
+border: none;
+padding: 15px 30px;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-skill:hover {
+background-color: #d48806;
+transform: translateY(-3px);
+}
+
+footer {
+background-color: #F0F0F6;
+padding: 20px;
+text-align: center;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+
+.footer-section {
+flex: 1;
+margin: 10px;
+}
+
+.footer-section h3 {
+margin-bottom: 10px;
+font-size: 1.2em;
+}
+
+.footer-section ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin: 5px 0;
+}
+
+.footer-section ul li a {
+text-decoration: none;
+color: #333;
+}
+
+.footer-section ul li a:hover {
+color: #007bff;
+}
+
+.logos {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.logos img {
+width: 80px;
+height: auto;
+margin: 10px 0;
+}
+
+.highlight {
+
+padding: 5px;
+position: relative;
+}
+
+.highlight::after {
+content: 'Vikas';
+position: absolute;
+top: 0;
+right: 0;
+background-color: green;
+color: white;
+padding: 2px 5px;
+font-size: 12px;
+transform: translate(50%, -50%);
+}
+
+.connect ul li a {
+display: flex;
+align-items: center;
+}
+
+.connect ul li a::before {
+content: '';
+display: inline-block;
+width: 20px;
+height: 20px;
+background-size: cover;
+margin-right: 8px;
+}
+
+.connect ul li a[href*="LinkedIn"]::before {
+background-image: url('linkedin.png');
+}
+
+.connect ul li a[href*="Instagram"]::before {
+background-image: url('instagram.png');
+}
+
+.connect ul li a[href*="Facebook"]::before {
+background-image: url('facebook.png');
+}
+
+.copyright {
+margin-top: 20px;
+font-size: 0.9em;
+color: #999;
+}
+
+
+.logo-container{
+
+/* margin-bottom: 100px;  */
+/* position: sticky; */
+top: 0;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 0 1rem 0;
+z-index: 10;
+margin-left: 0.75rem;
+justify-content: center;
+align-items: center;
+
+gap: 100px;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: None;
+border: None;
+outline: None;
+scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+}
+:root{
+--bg-color: #fff;
+--second-bg-color: #FFB400; 
+--third-bg-color: #F0F0F6;
+--text-color: #000;
+--second-text-color: #767676;
+}
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+}
+body{
+background: var(--bg-color);
+color: var(--text-color);
+}
+section{
+min-height: 100vh;
+padding: 10rem 9% 2rem;
+}
+.header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 2rem 9%;
+background: var(--bg-color);
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+.logo img{
+height: 65px;
+width: 158px;
+cursor: default;
+}
+.navbar a{
+font-size: 1.4rem;
+color: var(--text-color);
+font-weight: 600;
+margin-left: 3rem;
+}
+.navbar a.active{
+background-color: var(--second-bg-color);
+padding: 10px;
+border-radius: 5px;
+}
+#menu-icon{
+font-size: 3.6rem;
+color: var(--text-color);
+display: none;
+}
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; 
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.modal-content h2 {
+margin-top: 0;
+/* margin-bottom: 20px; */
+font-size: 24px;
+text-align: center;
+}
+
+.modal-content .form-group {
+margin-bottom: 20px;
+}
+
+.modal-content label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 10px;
+}
+
+.modal-content input[type="text"]:disabled {
+background-color: #f4f4f4;
+cursor: not-allowed;
+}
+
+.modal-content .skills-section-form {
+padding: 15px;
+border-radius: 8px;
+position: relative;
+}
+
+.modal-content .skills-label {
+display: inline-block;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.modal-content .skills-header {
+display: flex;
+justify-content: space-between;
+padding: 5px 0;
+}
+
+.modal-content .skill-label {
+font-weight: bold;
+width: 75%;
+}
+
+.modal-content .proficiency-label {
+font-weight: bold;
+width: 20%;
+text-align: right;
+}
+
+.modal-content .skills-container {
+display: flex;
+flex-direction: column;
+}
+
+.modal-content .skill-entry {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.modal-content .skill-input {
+width: 75%;  /* Increased width for the skill input */
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.modal-content .proficiency-input {
+width: 20%;  /* Reduced width for the proficiency input */
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-left: 5px;
+text-align: right;
+}
+
+.modal-content .form-actions {
+display: flex;
+justify-content: flex-end; /* Align items to the right */
+gap: 10px; /* Space between buttons */
+margin-top: 20px;
+}
+
+.add-skill-btn {
+background-color: #f0ad4e;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.cancel-btn {
+background-color: #d9534f;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+#domain{
+width:100%;
+}
+
+/* The Close Button */
+.close {
+/* color: #aaa; */
+float: right;
+/* font-size: 28px; */
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+html {
+    font-size: 55%; /* Reduce the base font size */
+}
+
+.header {
+    padding: 2rem 5%;
+}
+
+.navbar a {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.home-content h1 {
+    font-size: 4.2rem;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+}
+
+.home-img img {
+    width: 300px;
+    height: auto;
+}
+
+.portfolio-container {
+    grid-template-columns: 1fr; /* Make it single column */
+    gap: 2rem;
+}
+
+.skills-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommendation .cards-container {
+    flex-direction: column;
+    max-width: 90%; /* Shrink card container */
+}
+
+.recommendation .card {
+    width: 100%; /* Full width for smaller screens */
+}
+
+.contact {
+    flex-direction: column;
+}
+
+.contact-information, .contact .info {
+    width: 100%;
+}
+
+.modal-content {
+    width: 95%;
+}
+}
